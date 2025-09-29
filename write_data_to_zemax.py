@@ -56,7 +56,7 @@ def display_lde(TheSystem):
 
     # better yet, make a table with mpl
     # this is giving a weird error, but works...
-    render_mpl_table(lde, col_width=1.0, font_size=10)
+    #render_mpl_table(lde, col_width=1.0, font_size=10)
 
 
 def set_system_units(TheSystem, PatentData, ZOSAPI):
