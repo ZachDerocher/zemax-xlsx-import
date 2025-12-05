@@ -122,7 +122,7 @@ def set_glass_catalogs(TheSystem, PatentData):
     available_catalogs = TheSystem.SystemData.MaterialCatalogs.GetAvailableCatalogs()
     default_catalogs = TheSystem.SystemData.MaterialCatalogs.GetCatalogsInUse()
     for c in catalogs_to_use:
-        if c not in available_catalogs:
+        if (c not in available_catalogs) and (c not in default_catalogs):
             print(f"error: glass catalog {c} not found in AGF file\n")
         else:
             if c not in default_catalogs:
