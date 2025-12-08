@@ -14,6 +14,13 @@ import read_excel_data
 import initialize_zemax_connection
 import write_data_to_zemax
 
+# to do
+#   better error handling
+#   xlsx format flexibility
+#   expanded surface type support
+#   expanded multi-config type support
+#   expanded field type support
+
 # Query user for excel data
 root = tkinter.Tk()
 root.withdraw() #use to hide tkinter window
